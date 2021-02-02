@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Issue Tracker</title>
+</head>
+<body classs = "text-base font-sans font-normal bg-blue-600">
+    <div class = "container">
+        <header>
+            <h1>Issue Tracker</h1>
+        </header>
+        <h3>Add New Issue</h3>
+        <form>
+            <div>
+                <label for = "description">Description</label>
+                <input type = "text" name = "description" placeholder = "Kindly describe your issue"/>
+            </div>
+            <div>
+                <p>Severity</p>
+                <select>
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                </select>
+            </div>
+            <div>
+                <label for = "issueAssignment">Assigned to</label>
+                <input type = "text" name = "IssueAssignment" placeholder = "Tell me who you want it assigned to">
+            </div>
+            <button class = "bg-blue-500 text-blue-400 rounded-lg py-4 px-4 font-bold">Add</button>
+        </form>
+    </div>
+    <div>
+        <div id = "issuesList"></div>
+    </div>
+    <footer>
+        <p>&afy.afomaorji.com</p>
+    </footer>
+
+    <script src = "https://chancejs.com/chance.min.js"></script>
+    <script src = "main.js"></script>
+</body>
+</html>
